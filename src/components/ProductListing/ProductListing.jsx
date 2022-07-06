@@ -14,10 +14,13 @@ const ProductListing = () => {
 		<div className='productlisting-container'>
 			<div className='spacer-3rem'></div>
 			<div className='grid-3-columnlayout'>
-				{filterData &&
+				{filterData.length > 0 ? (
 					filterData.map((product) => (
 						<ProductCard product={product} key={product.id} />
-					))}
+					))
+				) : (
+					<h1>Particular filter has no prodcuts. Try other filter :)</h1>
+				)}
 			</div>
 			<div className='spacer-3rem'></div>
 		</div>
