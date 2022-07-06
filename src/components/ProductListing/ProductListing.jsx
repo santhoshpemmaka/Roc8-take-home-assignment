@@ -19,7 +19,7 @@ const ProductListing = () => {
 						<ProductCard product={product} key={product.id} />
 					))
 				) : (
-					<h1>Particular filter has no prodcuts. Try other filter :)</h1>
+					<h1>Particular filter has no products. Try other filter :)</h1>
 				)}
 			</div>
 			<div className='spacer-3rem'></div>
